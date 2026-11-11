@@ -9,9 +9,11 @@ else:
 
 answer = random.randint(1, 50)
 tries = 0
+history = []
 while True:
     guess = get_number('1~50 사이의 수 : ', 1, 50)
     tries += 1
+    history.append(guess)
     if guess < answer:
         print('UP!더 큰수')
     elif guess > answer:
