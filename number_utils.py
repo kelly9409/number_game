@@ -6,7 +6,7 @@ def get_number(msg, low, high):
                 return n
             print(low, '~', high, '사이로 입력하세요.')
         except ValueError:
-            print('숫자만 입력하세요.')
+            print('숫자만 입력')
  
 def load_best(fname):
     try:
